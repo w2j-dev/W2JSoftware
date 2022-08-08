@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<Description>Helper to make it easier to use Datetime, Sting and others</Description>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<Copyright>W2J Consultoria</Copyright>
+		<RepositoryType></RepositoryType>
+		<RepositoryUrl>https://github.com/w2j-dev/W2JSoftware</RepositoryUrl>
+		<Authors>W2J</Authors>
+		<Company>W2JSoftware</Company>
+		<PackageId>W2JSoftware.Utils.Helper</PackageId>
+		<Product>W2JSoftware.Utils.Helper</Product>
+		<AssemblyVersion>1.0.1.0</AssemblyVersion>
+		<FileVersion>1.0.1.0</FileVersion>
+		<Version>1.0.1</Version>
+		<SourceRevisionId>build$([System.DateTime]::UtcNow.ToString("yyyyMMddHHmmss"))</SourceRevisionId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\W2JSoftware.Utils.Common\W2JSoftware.Utils.Common.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="..\..\LICENSE.txt">
+		<Pack>True</Pack>
+		<PackagePath></PackagePath>
+	  </None>
+	</ItemGroup>
+</Project>

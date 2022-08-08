@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<RepositoryUrl>https://github.com/w2j-dev/W2JSoftware</RepositoryUrl>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<Description>Wrapper for EntityFramework using CQRS</Description>
+		<Copyright>W2J Consultoria</Copyright>
+		<Authors>W2J</Authors>
+		<Company>W2JSoftware</Company>
+		<PackageId>W2JSoftware.Utils.EntityFramework</PackageId>
+		<Product>W2JSoftware.Utils.EntityFramework</Product>
+		<SourceRevisionId>build$([System.DateTime]::UtcNow.ToString("yyyyMMddHHmmss"))</SourceRevisionId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Interfaces\IBaseService.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="LinqKit.Microsoft.EntityFrameworkCore" Version="3.0.20" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.9" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.9" />
+		<PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<ProjectReference Include="..\W2JSoftware.Utils.Common\W2JSoftware.Utils.Common.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\..\LICENSE.txt">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+
+</Project>

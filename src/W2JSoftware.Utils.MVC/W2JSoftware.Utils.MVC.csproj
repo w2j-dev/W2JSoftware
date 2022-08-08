@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<Copyright>W2J Consultoria</Copyright>
+		<RepositoryUrl>https://github.com/w2j-dev/W2JSoftware</RepositoryUrl>
+		<Authors>W2J</Authors>
+		<Company>W2JSoftware</Company>
+		<PackageId>W2JSoftware.Utils.MVC</PackageId>
+		<Product>W2JSoftware.Utils.MVC</Product>
+		<SourceRevisionId>build$([System.DateTime]::UtcNow.ToString("yyyyMMddHHmmss"))</SourceRevisionId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Interceptor\ValidatorInterceptor.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Localization" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.RazorPages" Version="2.2.5" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
+		<PackageReference Include="FluentValidation.AspNetCore" Version="8.6.2" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\W2JSoftware.Utils.Helper\W2JSoftware.Utils.Helper.csproj" />
+		<ProjectReference Include="..\W2JSoftware.Utils.WebBase\W2JSoftware.Utils.WebBase.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\LICENSE.txt">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+
+</Project>
