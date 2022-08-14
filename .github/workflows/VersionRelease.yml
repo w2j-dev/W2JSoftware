@@ -10,7 +10,7 @@ jobs:
 
     env:
       BUILD_CONFIG: 'Release'
-      SOLUTION: 'WRSoftware.sln'
+      SOLUTION: 'W2JSoftware.sln'
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
     runs-on: ubuntu-latest
