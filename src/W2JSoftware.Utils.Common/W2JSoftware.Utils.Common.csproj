@@ -12,6 +12,7 @@
 		<PackageId>W2JSoftware.Utils.Common</PackageId>
 		<Product>W2JSoftware.Utils.Common</Product>
 		<SourceRevisionId>build$([System.DateTime]::UtcNow.ToString("yyyyMMddHHmmss"))</SourceRevisionId>
+		<PackageIcon>icon.png</PackageIcon>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -28,6 +29,10 @@
 		<None Include="..\..\LICENSE.txt">
 			<Pack>True</Pack>
 			<PackagePath></PackagePath>
+		</None>
+		<None Include="..\..\icon.png">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
 		</None>
 	</ItemGroup>
 
