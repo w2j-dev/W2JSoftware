@@ -1,9 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/w2j-dev/W2JSoftware</RepositoryUrl>
+    <NeutralLanguage>en-001</NeutralLanguage>
+    <Authors>W2J</Authors>
+    <Company>W2JSoftware</Company>
+    <PackageId>W2JSoftware.Utils.EntityFramework</PackageId>
+    <Product>W2JSoftware.Utils.EntityFramework</Product>
+    <SourceRevisionId>build$([System.DateTime]::UtcNow.ToString("yyyyMMddHHmmss"))</SourceRevisionId>
+    <PackageIcon>icon.png</PackageIcon>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="LinqKit.Microsoft.EntityFrameworkCore" Version="6.1.2" />
@@ -14,6 +23,16 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\W2JSoftware.Utils.Common\W2JSoftware.Utils.Common.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
