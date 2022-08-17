@@ -13,9 +13,9 @@
 		<Product>W2JSoftware.Utils.Logging</Product>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Castle.Core" Version="4.4.1" />
+		<PackageReference Include="Castle.Core" Version="5.1.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-		<PackageReference Include="NLog" Version="4.7.5" />
+		<PackageReference Include="NLog" Version="5.0.2" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\W2JSoftware.Utils.Common\W2JSoftware.Utils.Common.csproj" />
