@@ -26,6 +26,14 @@ jobs:
     - name: Set VERSION variable from tag
       #run: echo "BUILD_VERSION=1.1.0" >> $GITHUB_ENV
       run: echo "BUILD_VERSION=${GITHUB_REF/refs\/tags\/v/}" >> $GITHUB_ENV
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: |
+          3.1.x
+          6.0.x
+        
       
     - name: Setup NuGet
       uses: NuGet/setup-nuget@v1.0.5
@@ -33,11 +41,7 @@ jobs:
     - name: Restore dependencies
       run: nuget restore $SOLUTION
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: '6.0.x'
-        
+   
     - name: Build
       run: dotnet build $SOLUTION --configuration $BUILD_CONFIG -p:Version=$BUILD_VERSION --no-restore
     
