@@ -1,7 +1,6 @@
 name: Building on main push .NET Core
 
 on:
-  push:
   pull_request:
     branches:
       - main
