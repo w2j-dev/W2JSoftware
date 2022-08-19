@@ -1,4 +1,4 @@
-name: Building on main push .NET Core
+name: Build and Pack on Pull Request
 
 on:
   pull_request:
