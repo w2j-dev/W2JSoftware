@@ -13,8 +13,8 @@
 		<SourceRevisionId>build$([System.DateTime]::UtcNow.ToString("yyyyMMddHHmmss"))</SourceRevisionId>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Hangfire.Core" Version="1.7.24" />
-		<PackageReference Include="MediatR" Version="9.0.0" />
+		<PackageReference Include="Hangfire.Core" Version="1.7.30" />
+		<PackageReference Include="MediatR" Version="10.0.1" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="..\..\LICENSE.txt">

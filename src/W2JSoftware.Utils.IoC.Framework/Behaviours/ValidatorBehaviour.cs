@@ -19,7 +19,7 @@ namespace W2JSoftware.Utils.IoC.Framework.Behaviours
     /// <typeparam name="TRequest">The type of the request.</typeparam>
     /// <typeparam name="TResponse">The type of the response.</typeparam>
     /// <seealso cref="MediatR.IPipelineBehavior{TRequest, TResponse}" />
-    public class ValidatorBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
+    public class ValidatorBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse>
     {
         /// <summary>
         /// The logger configs
