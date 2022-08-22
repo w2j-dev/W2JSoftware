@@ -31,7 +31,7 @@ namespace W2JSoftware.Utils.Common.Models
         /// <value>
         /// The last modified by.
         /// </value>
-        public Guid LastModifiedBy { get; set; }
+        public Guid? LastModifiedBy { get; set; }
 
         /// <summary>
         /// Gets or sets the last modified at.
